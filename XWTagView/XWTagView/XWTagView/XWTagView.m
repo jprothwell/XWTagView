@@ -21,8 +21,8 @@
     for (int i = 0; i < tags.count; i++) {
         NSString *tag = tags[i];
         NSMutableAttributedString *tagText = [[NSMutableAttributedString alloc] initWithString:tag];
-        [tagText yy_insertString:@"   " atIndex:0];
-        [tagText yy_appendString:@"   "];
+        [tagText yy_insertString:@" " atIndex:0];
+        [tagText yy_appendString:@"  "];
         tagText.yy_font = maker.font;
         tagText.yy_color = maker.textColor;
         [tagText yy_setTextBinding:[YYTextBinding bindingWithDeleteConfirm:NO] range:tagText.yy_rangeOfAll];
